@@ -1,0 +1,25 @@
+#!/bin/sh
+# PROVIDE: xbt_tracker
+# REQUIRE: NETWORKING DAEMON mysql LOGIN
+
+. /etc/rc.subr
+name="xbt_tracker"
+rcvar=xbt_tracker6_enable
+load_rc_config ${name}
+: ${xbt_tracker6_enable="NO"}
+: ${xbt_tracker6_flags="--conf_file /usr/local/xbttracker6/Tracker/xbt_tracker.conf"}
+pidfile="/var/run/xbt_tracker6.pid"
+command="/usr/local/xbttracker6/Tracker/${name}"
+required_files="/usr/local/xbttracker6/Tracker/${name}.conf"
+case "${xbt_tracker6_flags}" in
+*-p\ *)
+echo "ERROR: \$xbt_flags includes -p option." \
+"PID file is already set to $pidfile."
+exit 1
+;;
+*)
+command_args=" ${xbt_tracker6_flags}"
+;;
+esac
+run_rc_command "$1"
+
