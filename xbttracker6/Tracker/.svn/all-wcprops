@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/2/trunk/Tracker
+END
+tracker_input.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/Tracker/tracker_input.cpp
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/Tracker/config.h
+END
+xbt_tracker_upgrade_0.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/Tracker/xbt_tracker_upgrade_0.sql
+END
+make.bsd.sh
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2/trunk/Tracker/make.bsd.sh
+END
+xbt_tracker_upgrade_1.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/Tracker/xbt_tracker_upgrade_1.sql
+END
+udp_listen_socket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/Tracker/udp_listen_socket.cpp
+END
+epoll.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/Tracker/epoll.h
+END
+XBT Tracker.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/Tracker/XBT%20Tracker.nsi
+END
+tcp_listen_socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/Tracker/tcp_listen_socket.h
+END
+client.h
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/Tracker/client.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/Tracker/stdafx.cpp
+END
+transaction.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/Tracker/transaction.h
+END
+XBT Tracker.rc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/Tracker/XBT%20Tracker.rc
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/Tracker/CMakeLists.txt
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/Tracker/resource.h
+END
+xbt_tracker.conf.default
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/Tracker/xbt_tracker.conf.default
+END
+stats.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/Tracker/stats.h
+END
+connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/Tracker/connection.h
+END
+config.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/Tracker/config.cpp
+END
+make.sh
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/Tracker/make.sh
+END
+XBT Tracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/Tracker/XBT%20Tracker.cpp
+END
+XBT Tracker.aps
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/Tracker/XBT%20Tracker.aps
+END
+server.h
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/Tracker/server.h
+END
+epoll.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/2/trunk/Tracker/epoll.cpp
+END
+tcp_listen_socket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/Tracker/tcp_listen_socket.cpp
+END
+client.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/Tracker/client.cpp
+END
+tracker_input.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/Tracker/tracker_input.h
+END
+udp_listen_socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/Tracker/udp_listen_socket.h
+END
+XBT Tracker.sln
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/Tracker/XBT%20Tracker.sln
+END
+transaction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/Tracker/transaction.cpp
+END
+xbt_tracker.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/Tracker/xbt_tracker.sql
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/Tracker/COPYING
+END
+XBT Tracker.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/Tracker/XBT%20Tracker.vcproj
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/Tracker/stdafx.h
+END
+connection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/Tracker/connection.cpp
+END
+xbt_tracker_v6.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/Tracker/xbt_tracker_v6.sql
+END
+server.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/Tracker/server.cpp
+END

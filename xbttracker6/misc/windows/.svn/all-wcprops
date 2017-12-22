@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2/trunk/misc/windows
+END
+nt_service.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/misc/windows/nt_service.cpp
+END
+nt_service.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/misc/windows/nt_service.h
+END
+ETSLayout.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/misc/windows/ETSLayout.cpp
+END
+browse_for_directory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/misc/windows/browse_for_directory.cpp
+END
+ETSLayout.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/misc/windows/ETSLayout.h
+END
+browse_for_directory.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/misc/windows/browse_for_directory.h
+END
