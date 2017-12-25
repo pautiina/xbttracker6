@@ -20,36 +20,34 @@ if (!isset($called_by_script_server)) {
 
 function xbt_status($xbtt_status_url) {
 
-$result_for_url = get_web_page( $xbtt_status_url );
-if ( $result_for_url['errno'] != 0 ) {
-    cacti_log('ERROR: Invalid URL or timeout for:' . $xbtt_status_url . ' ERROR:' . curl_strerror($result_for_url['errno']), false);
-    return "leechers:U peers:U seeders:U torrents:U";
-} elseif ( $result_for_url['http_code'] != 200 ) {
-    cacti_log('ERROR: Page ' . $xbtt_status_url . ' does not exist or do not have permission', false);
-    return "leechers:U peers:U seeders:U torrents:U";
-} else {
-    $page = $result_for_url['content']; 
-    $dom  = new DOMDocument();
-    $dom->loadHTML($page);
-    $leechers = $dom->getElementsByTagName('td')->item(1)->nodeValue;
-    $seeders = $dom->getElementsByTagName('td')->item(3)->nodeValue;
-    $peers = $dom->getElementsByTagName('td')->item(5)->nodeValue;
-    $torrents = $dom->getElementsByTagName('td')->item(7)->nodeValue;
-    return sprintf("leechers:%d seeders:%d peers:%d torrents:%d", $leechers, $seeders, $peers,  $torrents);
-}
+    $result_for_url = get_web_page( $xbtt_status_url );
+    if ( $result_for_url['http_code'] == 200) {
+        $page = $result_for_url['content']; 
+        $dom  = new DOMDocument();
+        $dom->loadHTML($page);
+        $leechers = $dom->getElementsByTagName('td')->item(1)->nodeValue;
+        $seeders = $dom->getElementsByTagName('td')->item(3)->nodeValue;
+        $peers = $dom->getElementsByTagName('td')->item(5)->nodeValue;
+        $torrents = $dom->getElementsByTagName('td')->item(7)->nodeValue;
+        return sprintf("leechers:%d seeders:%d peers:%d torrents:%d", $leechers, $seeders, $peers,  $torrents);
+    } else {
+        cacti_log('WARNING: Invalid URL or timeout for:' . $xbtt_status_url . ' MESSAGE:' . curl_strerror($result_for_url['errno']), true);
+        return "leechers:U seeders:U peers:U  torrents:U";
+    }
 }
 
 function get_web_page( $url ){
     //- See more at: http://parsing-and-i.blogspot.ru/2009/09/curl-first-steps.html#sthash.A8rDS356.dpuf
     $uagent = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)"; 
-    $ch = curl_init( $url ); curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // возвращает веб-страницу 
+    $ch = curl_init( $url ); 
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // возвращает веб-страницу 
     curl_setopt($ch, CURLOPT_HEADER, 0); // не возвращает заголовки 
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); // переходит по редиректам 
     curl_setopt($ch, CURLOPT_ENCODING, ""); // обрабатывает все кодировки 
     curl_setopt($ch, CURLOPT_USERAGENT, $uagent); // useragent 
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 120); // таймаут соединения 
     curl_setopt($ch, CURLOPT_TIMEOUT, 120); // таймаут ответа 
-    curl_setopt($ch, CURLOPT_MAXREDIRS, 10); // останавливаться после 10-ого редиректа 
+    curl_setopt($ch, CURLOPT_MAXREDIRS, 1); // останавливаться после 10-ого редиректа 
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept-Encoding: gzip', 'Content-Type: text/xml; charset=cp1251'));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $content = curl_exec( $ch ); 
@@ -64,4 +62,3 @@ function get_web_page( $url ){
     return $header;
 }
 ?>
-
